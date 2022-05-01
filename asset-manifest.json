@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kz-components/static/css/main.e26aa709.css",
+    "main.js": "/kz-components/static/js/main.bb528d7a.js",
+    "static/js/787.03cd4c20.chunk.js": "/kz-components/static/js/787.03cd4c20.chunk.js",
+    "index.html": "/kz-components/index.html",
+    "main.e26aa709.css.map": "/kz-components/static/css/main.e26aa709.css.map",
+    "main.bb528d7a.js.map": "/kz-components/static/js/main.bb528d7a.js.map",
+    "787.03cd4c20.chunk.js.map": "/kz-components/static/js/787.03cd4c20.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e26aa709.css",
+    "static/js/main.bb528d7a.js"
+  ]
+}
