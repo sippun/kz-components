@@ -1,0 +1,91 @@
+.mini-calendar-container {
+  background-color: #ffffff;
+  width: 300px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+}
+
+.calendar-header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-text {
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.right-container {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 7px;
+}
+
+svg {
+  height: 16px;
+  fill:gray;
+}
+
+svg:hover {
+  fill: black;
+  cursor: pointer;
+}
+
+.weekday-indicator {
+  font-size: .9em;
+  font-weight: bold;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(auto, 1fr));
+  grid-template-rows: repeat(1, minmax(10px, 1fr));
+}
+
+.date-indicator {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(auto, 1fr));
+  grid-template-rows: repeat(6, minmax(10px, 1fr));
+  grid-gap: 5px;
+  row-gap: 5px;
+  -webkit-font-feature-settings: "lnum";
+  -moz-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+
+.date-icon {
+  font-family: 'Raleway', sans-serif;
+  font-size: .8em;
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+}
+
+.active {
+ color: black;
+}
+
+.select {
+  color: #AA7C81;
+  border-radius: 50%;
+  background-color: #f3dbde;
+}
+
+.current {
+  color: white;
+  border-radius: 50%;
+  background-color: #AA7C81;
+}

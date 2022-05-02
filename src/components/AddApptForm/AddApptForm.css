@@ -1,0 +1,202 @@
+/* -------- PopUpAppt ----------- */
+.btn {
+  text-align: center;
+  top: 30%;
+  left: 42%;
+  zoom: 1.0;
+}
+
+button {
+  border-radius: 5px;
+  border-color: transparent;
+  outline: none;
+  background-color: #AA7C81;
+  color: white;
+  font-size: 15px;
+  font-size: 1vw;
+  padding: 3px 20px 3px 20px;
+}
+
+button:hover {
+  background-color: #704e52;
+}
+
+
+.modal {
+  position: fixed;
+  z-index: 100;   
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.modal_content {
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  padding: 0px 0px 5px 0px;
+  border-radius: 15px;
+  
+}
+
+.top-bar{
+  background-color: #AA7C81;
+  width: 100%;
+  height: 40px;
+  border-radius: 15px 15px 0px 0px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.close {
+  margin-right: 20px;
+  font-size: 1.5em;
+  color: White;
+  float: right;
+}
+
+.close:hover {
+  color: Black; 
+  cursor: pointer;
+}
+
+ /* -------- Form within PopUpAppt ----------- */
+
+ input[type=text] {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: solid;
+  background-color: white;
+  border-color: #AA7C81;
+  border-radius: 0px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: #9f9f9f;
+  font-size: 1.5em;
+}
+
+input[type=text]::placeholder {
+  color: #9f9f9f;
+  opacity: 0.5;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  resize: none;
+}
+
+input[type=date], input[type=time] {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: solid;
+  background-color: white;
+  border-color: #AA7C81;
+  color: #AA7C81;
+  width: 100%;
+  height: 80%;
+  padding: 5px;
+}
+
+
+.col-2 {
+  float: left;
+  width: 2%;
+  margin-top: 6px;
+  margin-right:5px;
+  padding: 5px;
+}
+
+.col-10 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+  margin-right:5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.col-15-l {
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+  padding: 5px;
+}
+
+.col-15-r {
+  float: right;
+  width: 15%;
+  margin-top: 6px;
+  padding: 5px;
+}
+
+.col-30 {
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+  padding: 5px;
+}
+
+.col-70 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+  margin-right:5px;
+  padding: 5px;
+}
+
+.col-90 {
+  float: left;
+  width: 90%;
+  margin-top: 6px;
+  padding: 10px;
+}
+
+.col-90-c {
+  align-items: left;
+  text-align: left;
+  float: left;
+  width: 90%;
+  margin-top: 6px;
+  padding: 10px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row{
+  content:"";
+  padding: 0px 25px 0px 25px;
+  display: flex;
+  flex-direction: row;
+  clear: both
+}
+
+select{
+  font-family: 'Raleway', sans-serif;
+  background-color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-color: #808080;
+  border-radius: 5px;
+  color: #AA7C81;
+  width: 100%;
+  height: 80%;
+  padding: 5px;
+}

@@ -1,22 +1,28 @@
-import logo from './logo.svg';
+import { useState } from 'react'
 import './App.css';
+import MiniCalendar from './components/MiniCalendar/MiniCalendar'
+import { getToday, getYearMonthDay } from './components/MiniCalendar/moment-utils'
+import AddApptForm from './components/AddApptForm/AddApptForm'
+
 
 function App() {
+  const [showAddAppt, setShowAddAppt] = useState(false);
+  const [date, setDate] = useState(getToday());
+
+  const toggleAppt = () => {
+    setShowAddAppt(!showAddAppt);
+  }
+
   return (
     <div className="App">
+      <center>
+          {showAddAppt ? <AddApptForm apptDate={getYearMonthDay(date)} toggleClose={toggleAppt}/> : null}
+        </center>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="calendar-container">
+          <MiniCalendar selectDate={date} setSelectDate={setDate}/>
+          <button onClick={toggleAppt}>Schedule</button>
+        </div>
       </header>
     </div>
   );
